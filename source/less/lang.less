@@ -1,0 +1,47 @@
+.lang__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-right: 105px;
+
+  align-items: center;
+  list-style: none;
+}
+
+.lang__type {
+  padding: 0;
+  margin-right: 5px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.lang__type a {
+  display: block;
+
+  color: @black;
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+.lang__type--current {
+  display: block;
+  box-sizing: border-box;
+
+  width: 36px;
+  height: 36px;
+  padding-top: 10px;
+
+  border-radius: 100%;
+  background-color: @black;
+
+  text-align: center;
+
+  a {
+    color: @fill;
+  }
+}

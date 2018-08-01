@@ -1,0 +1,44 @@
+.feedback {
+  a {
+    color: @fill;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+  }
+
+  .button {
+    width: 188px;
+    height: 34px;
+
+    border: 2px solid @fill;
+    border-radius: 19px;
+  }
+}
+
+a.feedback__tel {
+  position: relative;
+
+  display: block;
+  margin-bottom: 20px;
+
+  text-align: right;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 26px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 5px;
+
+    width: 16px;
+    height: 16px;
+    margin-top: -8px;
+
+    background: url("../img/icon_phone.svg") no-repeat;
+  }
+}

@@ -1,0 +1,26 @@
+footer {
+  background-color: @black;
+  color: @fill;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.footer__blocks {
+  display: flex;
+  width: @desktop - 200px;
+  margin: @center;
+  padding-top: 32px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  > div {
+    padding-left: 45px;
+    padding-right: 45px;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+
+    &:first-of-type {
+      border-left: none;
+      padding-left: 0;
+    }
+  }
+}
